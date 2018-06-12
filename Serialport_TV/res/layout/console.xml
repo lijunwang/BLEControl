@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:keepScreenOn="true">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical" >
+        <EditText
+            android:id="@+id/EditTextReception"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_weight="1"
+            android:gravity="top"
+            android:hint="@string/reception"
+            android:isScrollContainer="true"
+            android:scrollbarStyle="insideOverlay" >
+        </EditText>
+
+        <EditText
+            android:id="@+id/EditTextEmission"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/emission"
+            android:lines="1" >
+        </EditText>
+        <Button
+            android:id="@+id/send"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:text="@string/send" />
+    </LinearLayout>
+
+    <!-- new UI for Test -->
+
+    <TextView
+        android:id="@+id/info"
+        android:textSize="20sp"
+        android:textColor="@android:color/white"
+        android:visibility="gone"
+        android:paddingLeft="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="60dp" />
+
+    <Button
+        android:visibility="gone"
+        android:layout_below="@id/info"
+        android:id="@+id/btSpeedAdd"
+        android:layout_alignParentLeft="true"
+        android:text="@string/speed_add"
+        android:layout_marginTop="10dp"
+        android:layout_width="150dp"
+        android:layout_height="50dp"/>
+
+    <Button
+        android:visibility="gone"
+        android:id="@+id/btSpeedReduce"
+        android:text="@string/speed_reduce"
+        android:layout_marginTop="10dp"
+        android:layout_below="@id/info"
+        android:layout_alignParentRight="true"
+        android:layout_width="150dp"
+        android:layout_height="50dp"/>
+
+    <Button
+        android:visibility="gone"
+        android:id="@+id/btStepAdd"
+        android:text="@string/step_add"
+        android:layout_marginTop="10dp"
+        android:layout_below="@id/btSpeedAdd"
+        android:layout_alignParentLeft="true"
+        android:layout_width="150dp"
+        android:layout_height="50dp"/>
+
+    <Button
+        android:visibility="gone"
+        android:id="@+id/btStepReduce"
+        android:text="@string/step_reudce"
+        android:layout_marginTop="10dp"
+        android:layout_below="@id/btSpeedReduce"
+        android:layout_alignParentRight="true"
+        android:layout_width="150dp"
+        android:layout_height="50dp"/>
+
+    <Button
+        android:visibility="gone"
+        android:id="@+id/btRotate"
+        android:text="@string/rotate"
+        android:layout_marginTop="10dp"
+        android:layout_below="@id/btStepReduce"
+        android:layout_width="150dp"
+        android:layout_height="50dp"/>
+
+    <Button
+        android:visibility="gone"
+        android:id="@+id/btRevert"
+        android:text="@string/revert"
+        android:layout_marginTop="10dp"
+        android:layout_below="@id/btStepAdd"
+        android:layout_alignParentRight="true"
+        android:layout_width="150dp"
+        android:layout_height="50dp"/>
+</RelativeLayout>
