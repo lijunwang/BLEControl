@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background"
+    tools:context="think.anew.com.bleremotecontroler.MainActivity">
+
+    <LinearLayout
+        android:id="@+id/row1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/function_button_margin_left"
+        android:layout_marginRight="@dimen/function_button_margin_right"
+        android:layout_marginTop="@dimen/function_button_margin_top"
+        android:orientation="horizontal">
+
+        <ImageButton
+            android:id="@id/function_power_on"
+            style="@style/FunctionButton"
+            android:src="@drawable/btn_power" />
+
+        <ImageButton
+            android:id="@id/function_mouse"
+            style="@style/FunctionButton"
+            android:src="@drawable/btn_mouse" />
+
+        <ImageButton
+            android:id="@id/function_bluetooth_pair"
+            style="@style/FunctionButton"
+            android:src="@drawable/btn_home" />
+    </LinearLayout>
+
+    <TableLayout
+        android:id="@+id/tab_row_container"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/row1"
+        android:layout_marginLeft="@dimen/shortcut_button_margin_left"
+        android:layout_marginRight="@dimen/shortcut_button_margin_right"
+        android:layout_marginTop="@dimen/shortcut_button_margin_top">
+
+        <TableRow android:layout_marginTop="@dimen/shortcut_button_margin_top">
+
+            <ImageButton
+                android:id="@id/function_sync_wifi"
+                style="@style/FunctionButton"
+                android:src="@drawable/btn_sync_wifi" />
+
+            <ImageButton
+                android:id="@id/function_share_wifi"
+                style="@style/FunctionButton"
+                android:src="@drawable/btn_wifi_hot" />
+
+            <ImageButton
+                android:id="@id/function_bluetooth_pair"
+                style="@style/FunctionButton"
+                android:src="@drawable/btn_bt" />
+        </TableRow>
+
+        <TableRow android:layout_marginTop="@dimen/shortcut_button_vertical_margin">
+
+            <ImageButton
+                android:id="@id/function_more"
+                style="@style/FunctionButton"
+                android:src="@drawable/btn_more" />
+
+            <ImageButton
+                android:id="@id/function_HDMI"
+                style="@style/FunctionButton"
+                android:src="@drawable/btn_hdmi" />
+
+            <ImageButton
+                android:id="@id/function_clear"
+                style="@style/FunctionButton"
+                android:src="@drawable/btn_uninstall" />
+        </TableRow>
+
+        <TableRow android:layout_marginTop="@dimen/shortcut_button_vertical_margin">
+
+            <ImageButton
+                android:id="@id/function_tshape"
+                style="@style/FunctionButton"
+                android:src="@drawable/btn_tshape" />
+
+            <ImageButton
+                android:id="@id/function_wifi_direct"
+                style="@style/FunctionButton"
+                android:src="@drawable/btn_cast" />
+
+            <ImageButton
+                android:id="@id/function_clear"
+                style="@style/FunctionButton"
+                android:src="@drawable/btn_clear" />
+        </TableRow>
+    </TableLayout>
+
+    <ImageButton
+        android:id="@id/control_back"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="@dimen/normal_margin"
+        android:background="@drawable/btn_back"
+        android:src="@drawable/back" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@id/control_back"
+        android:layout_below="@id/tab_row_container"
+        android:layout_marginTop="@dimen/normal_margin">
+
+        <View
+            android:layout_width="150dp"
+            android:layout_height="match_parent" />
+
+        <RelativeLayout
+            android:layout_width="@dimen/direction_button_width"
+            android:layout_height="@dimen/direction_button_height"
+            android:layout_centerInParent="true"
+            android:background="@drawable/direction_circle_bg">
+
+            <ImageButton
+                android:id="@+id/control_center"
+                style="@style/DirectionButton"
+                android:layout_centerInParent="true"
+                android:src="@drawable/btn_center" />
+
+            <ImageButton
+                android:id="@id/control_up"
+                style="@style/DirectionButton"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="@dimen/direction_button_margin_top"
+                android:src="@drawable/btn_up" />
+
+            <ImageButton
+                android:id="@id/control_down"
+                style="@style/DirectionButton"
+                android:layout_alignParentBottom="true"
+                android:layout_centerHorizontal="true"
+                android:layout_marginBottom="@dimen/direction_button_margin_bottom"
+                android:src="@drawable/btn_down" />
+
+            <ImageButton
+                android:id="@id/control_left"
+                style="@style/DirectionButton"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="@dimen/direction_button_margin_left"
+                android:src="@drawable/btn_left" />
+
+            <ImageButton
+                android:id="@id/control_right"
+                style="@style/DirectionButton"
+                android:layout_centerVertical="true"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="@dimen/direction_button_margin_right"
+                android:src="@drawable/btn_right" />
+        </RelativeLayout>
+
+        <View
+            android:layout_width="150dp"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true" />
+    </RelativeLayout>
+</RelativeLayout>

@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <item type="id" name="control_up"/>
+    <item type="id" name="control_down"/>
+    <item type="id" name="control_left"/>
+    <item type="id" name="control_right"/>
+    <item type="id" name="control_center"/>
+    <item type="id" name="control_back"/>
+    <item type="id" name="function_power_on"/>
+    <item type="id" name="function_mouse"/>
+    <item type="id" name="function_home"/>
+    <item type="id" name="function_sync_wifi"/>
+    <item type="id" name="btn_wifi_hot"/>
+    <item type="id" name="function_share_wifi"/>
+    <item type="id" name="function_wifi_direct"/>
+    <item type="id" name="function_HDMI"/>
+    <item type="id" name="function_clear"/>
+    <item type="id" name="function_bluetooth_pair"/>
+    <item type="id" name="function_more"/>
+    <item type="id" name="function_tshape"/>
+    <item type="id" name="btn_uninstall"/>
+</resources>
